@@ -1,0 +1,53 @@
+.task__container-main {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 75%;
+    border: 2px solid var(--text-color);
+    background-color: var(--container-color);
+    border-radius: 0.75rem;
+    padding: 0.8rem;
+    align-self: center;
+}
+
+.task__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.task__description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+}
+
+.task__edit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+}
+
+.task__edit p {
+    font-weight: var(--font-medium);
+    cursor: default;
+}
+
+.task__edit p:hover {
+    text-decoration: underline;
+}
+
+.task__icon {
+    font-size: 2rem;
+    margin-top: 8px;
+    color: red;
+}
+
+.complete {
+    color: green;
+}

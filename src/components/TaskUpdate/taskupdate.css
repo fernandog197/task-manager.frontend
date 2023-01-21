@@ -1,0 +1,28 @@
+.taskupdate__container {
+    transition: .3s;
+}
+
+.taskupdate__form-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+        
+.taskupdate__form-checkbox {
+    margin-left: 0.5rem;
+}
+
+.taskupdate__form-input {
+    top: 0;
+    left: 0;
+    width: 50%;
+    max-height: 20px;
+    border: 2px solid var(--text-color);
+    background-color: var(--container-color);
+    color: var(--text-color);
+    outline: none;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    z-index: 1;
+}
