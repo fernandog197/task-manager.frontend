@@ -6,7 +6,7 @@ import { getAllAndCreate } from '../../constants/endPoints'
 
 import './taskinput.css'
 
-const TaskInput = ({  setCreate, modify, setModify  }) => {
+const TaskInput = ({  setCreate, modify, setModify, language  }) => {
     const [input, setInput] = useState('')
     const [state, fetchPost] = useFetch()
 
@@ -35,16 +35,16 @@ const TaskInput = ({  setCreate, modify, setModify  }) => {
         <div className='taskinput__content'>
             <form className='taskinput__form' onSubmit={handleSubmit}>
                 <div className="taskinput__form-div">
-                    <label className="taskinput__form-tag">Add a new task</label>
+                    <label className="taskinput__form-tag">{language.home.input.label}</label>
                     <input 
                         type="text" 
                         name='task'
                         value={input}
                         className='taskinput__form-input' 
-                        placeholder='Your task...'
+                        placeholder={language.home.input.placeholder}
                         onChange={handleChange}  
                     />
-                    <button className='button taskinput__button' type='submit'>Add task</button>
+                    <button className='button taskinput__button' type='submit'>{language.home.input.button}</button>
                 </div>
             </form>
         </div>

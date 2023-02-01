@@ -10,7 +10,7 @@ import { getPatchDeleteOne } from '../../constants/endPoints'
 
 import './task.css'
 
-const Task = ({ id, name, completed, setModify, modify, setDeleteTask }) => {
+const Task = ({ id, name, completed, setModify, modify, setDeleteTask, language }) => {
     const [updateMenu, setUpdateMenu] = useState(false)
     const [state, fetchDelete] = useFetch()
 
@@ -40,8 +40,8 @@ const Task = ({ id, name, completed, setModify, modify, setDeleteTask }) => {
                 </div>
 
                 <div className='task__edit'>
-                    <p onClick={handleState}>Edit task</p>
-                    <button className='button button--check' onClick={handleClick}>Delete</button>
+                    <p onClick={handleState}>{language.home.card.editTask}</p>
+                    <button className='button button--check' onClick={handleClick}>{language.home.card.button}</button>
                 </div>
             </div>
             {
@@ -51,7 +51,8 @@ const Task = ({ id, name, completed, setModify, modify, setDeleteTask }) => {
                                     completed={completed} 
                                     modify={modify} 
                                     setModify={setModify} 
-                                    setUpdateMenu={setUpdateMenu} 
+                                    setUpdateMenu={setUpdateMenu}
+                                    language={language}
                                 />
             }
         </div>

@@ -32,7 +32,7 @@ import './tasksgrid.css'
 //     }
 // ]
 
-const TasksGrid = ({ tasks, setDeleteTask, modify, setModify }) => {
+const TasksGrid = ({ tasks, setDeleteTask, modify, setModify, language }) => {
     
     return (
         <div className='tasksgrid__container'>
@@ -46,6 +46,7 @@ const TasksGrid = ({ tasks, setDeleteTask, modify, setModify }) => {
                             setDeleteTask={setDeleteTask}
                             modify={modify}
                             setModify={setModify}
+                            language={language}
                         />
                 ))
             }

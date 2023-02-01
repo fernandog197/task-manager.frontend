@@ -6,7 +6,7 @@ import { getPatchDeleteOne } from '../../constants/endPoints'
 
 import './taskupdate.css'
 
-const TaskUpdate = ({ id, name, completed, setUpdateMenu, modify, setModify }) => {
+const TaskUpdate = ({ id, name, completed, setUpdateMenu, modify, setModify, language }) => {
     const [state, fetchUpdate] = useFetch()
     const[input, setInput] = useState({
         name,
@@ -45,11 +45,11 @@ const TaskUpdate = ({ id, name, completed, setUpdateMenu, modify, setModify }) =
 
     return (
         <div className='taskupdate__container'>
-            <h3>Edit task</h3>
+            <h3>{language.home.edit.title}</h3>
             <form onSubmit={handleSubmit}>
                 <div className='taskupdate__form-inputs'>
                     <div>
-                        <label>Completed?</label>
+                        <label>{language.home.edit.completed}</label>
                         <input 
                             className='taskupdate__form-checkbox'
                             type="checkbox"
@@ -68,7 +68,7 @@ const TaskUpdate = ({ id, name, completed, setUpdateMenu, modify, setModify }) =
                         onChange={handleChange}
                     />
                 </div>
-                <button type='submit' className='button button--check'>Edit task</button>
+                <button type='submit' className='button button--check'>{language.home.edit.editTask}</button>
             </form>
         </div>
     )

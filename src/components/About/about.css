@@ -1,3 +1,7 @@
+.about__container a {
+    color: var(--title-color-dark);
+}
+
 .about__list li {
     display: flex;
     flex-direction: row;

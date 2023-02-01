@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 
 import './switch.css'
 
-const Switch = () => {
+const Switch = ({ language }) => {
   const [theme, setTheme] = useState('light')
 
   const handleChange = (e) => {

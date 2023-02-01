@@ -6,9 +6,13 @@ import { AiOutlineAppstore }  from 'react-icons/ai'
 
 import Switch from '../Switch/Switch'
 
+import { english, español } from '../../languages'
+
+import Español from '../../assets/espanol.png'
+import English from '../../assets/english.png'
 import './header.css'
 
-const Header = () => {
+const Header = ({ language, setLanguage }) => {
     /*===========Change Background Header===========*/
     window.addEventListener("scroll", () => {
         const header = document.querySelector('.header')
@@ -31,7 +35,21 @@ const Header = () => {
                     <Link to='/'>
                         <h3>Miguel Garcia</h3>
                     </Link>
-                    <Switch />
+                    <Switch language={language} />
+                    <div className='nav__logo-flagcontainer'>
+                        <img 
+                            src={English} 
+                            alt="eng-flag"
+                            onClick={() => {setLanguage(english)}}
+                            className={language.language === 'english'?'heartbeat':''}
+                        />
+                        <img 
+                            src={Español} 
+                            alt="esp-flag"
+                            onClick={() => {setLanguage(español)}}
+                            className={language.language === 'español'?'heartbeat':''}
+                        />
+                    </div>
                 </div>
 
                 <div className={showMenu?'nav__menu show-menu':'nav__menu'}>
@@ -47,7 +65,7 @@ const Header = () => {
                         <li className="nav__item">
                             <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav==='#about'?'nav__link active__link':'nav__link'}>
                                 <Link to='/about' className='nav__link'>
-                                    About
+                                    {language.header.about}
                                 </Link>
                             </a>
                         </li>

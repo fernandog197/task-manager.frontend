@@ -6,7 +6,7 @@ import { BsGithub } from 'react-icons/bs'
 
 import './footer.css'
 
-const Footer = () => {
+const Footer = ({ language }) => {
 
     return (
         <footer className='footer'>
@@ -15,15 +15,11 @@ const Footer = () => {
 
                 <ul className="footer__list">
                     <li>
-                        <a href="#about" className="footer__link">About</a>
+                        <a href="#about" className="footer__link">{language.footer.about}</a>
                     </li>
 
                     <li>
-                        <a href="#portfolio" className="footer__link">Projects</a>
-                    </li>
-
-                    <li>
-                        <a href="#testimonials" className="footer__link">Testimonials</a>
+                        <a href="#portfolio" className="footer__link">{language.footer.portfolio}</a>
                     </li>
                 </ul>
 

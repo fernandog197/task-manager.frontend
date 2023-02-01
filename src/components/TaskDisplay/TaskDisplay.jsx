@@ -9,7 +9,7 @@ import { getAllAndCreate } from '../../constants/endPoints'
 
 import './taskdisplay.css'
 
-const TaskDisplay = () => {
+const TaskDisplay = ({ language }) => {
     const[modify, setModify] = useState(false)
     const[create, setCreate] = useState(false)
     const[deleteTask, setDeleteTask] = useState(false)
@@ -52,17 +52,18 @@ const TaskDisplay = () => {
                 <TaskInput 
                     setCreate={setCreate}
                     modify={modify}
-                    setModify={setModify} 
+                    setModify={setModify}
+                    language={language}
                 />
                 <div className='taskdisplay__alerts'>
                     {
-                        deleteTask && <p>Task successfully delete!</p>
+                        deleteTask && <p>{language.home.states.deleteTask}</p>
                     }
                     {
-                        create && <p>Task successfully create!</p>
+                        create && <p>{language.home.states.create}</p>
                     }
                     {
-                        tasks.length === 0 && <p>You don't have any pending tasks :D</p>
+                        tasks.length === 0 && <p>{language.home.states.noTasks}</p>
                     }
                 </div>
                 <TaskGrid 
@@ -70,6 +71,7 @@ const TaskDisplay = () => {
                     setDeleteTask={setDeleteTask}
                     modify={modify}
                     setModify={setModify}
+                    language={language}
                 />
             </div>
         </section>
