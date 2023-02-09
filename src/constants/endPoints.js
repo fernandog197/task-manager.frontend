@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3000/api/v1/tasks'
+const baseUrl = 'https://task-manager-xx1a.onrender.com/api/v1/tasks'
 
 export const getAllAndCreate = `${baseUrl}/`
 

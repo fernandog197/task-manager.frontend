@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { BsTwitter } from 'react-icons/bs'
 import { BsLinkedin } from 'react-icons/bs'
@@ -14,12 +15,14 @@ const Footer = ({ language }) => {
                 <h1 className="footer__title">Miguel Garcia</h1>
 
                 <ul className="footer__list">
-                    <li>
-                        <a href="#about" className="footer__link">{language.footer.about}</a>
+                    <li className="footer__link">
+                        <Link to='/about'>
+                            {language.footer.about}
+                        </Link>
                     </li>
 
                     <li>
-                        <a href="#portfolio" className="footer__link">{language.footer.portfolio}</a>
+                        <a href="https://miguelgarcia-portfolio.netlify.app/" target='_blank' className="footer__link">{language.footer.portfolio}</a>
                     </li>
                 </ul>
 

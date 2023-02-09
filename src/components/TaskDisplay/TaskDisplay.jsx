@@ -27,7 +27,7 @@ const TaskDisplay = ({ language }) => {
         }
         setTimeout(() => {
             fetchTasks()
-        }, 100);
+        }, 500);
     }, [modify])
 
     useEffect(() => {

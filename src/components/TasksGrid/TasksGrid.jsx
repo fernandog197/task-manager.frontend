@@ -4,34 +4,6 @@ import Task from '../Task/Task'
 
 import './tasksgrid.css'
 
-// let array = [
-//     {
-//         _id: '63c068ed2529dd30c041db7b',
-//         name: "Tarea importante",
-//         completed: true
-//     },
-//     {
-//         _id: '63c068ed2529dd30c041db7b',
-//         name: "Tarea importante",
-//         completed: false
-//     },
-//     {
-//         _id: '63c068ed2529dd30c041db7b',
-//         name: "Tarea importante",
-//         completed: false
-//     },
-//     {
-//         _id: '63c068ed2529dd30c041db7b',
-//         name: "Tarea importante",
-//         completed: true
-//     },
-//     {
-//         _id: '63c068ed2529dd30c041db7b',
-//         name: "Tarea importante",
-//         completed: false
-//     }
-// ]
-
 const TasksGrid = ({ tasks, setDeleteTask, modify, setModify, language }) => {
     
     return (

@@ -60,11 +60,11 @@ const About = ({ language }) => {
             <p>{language.about.repositories}</p><br /><br />
             <div className='about__repositories'>
                 <div className='about__repositories-repository'>
-                    <p>task-manager.backend</p>
+                    <a href="https://github.com/fernandog197/task-manager.backend" target='_blank' className='about__contact-link'><p>task-manager.backend</p></a>
                     <BsGithub size='1.5rem' />
                 </div>
                 <div className='about__repositories-repository'>
-                    <p>task-manager.frontend</p>
+                    <a href="https://github.com/fernandog197/task-manager.frontend" target='_blank' className='about__contact-link'><p>task-manager.frontend</p></a>
                     <BsGithub size='1.5rem' />
                 </div>
             </div><br /><br />
@@ -76,19 +76,19 @@ const About = ({ language }) => {
             <br />
             <br />
             <div className='about__contact'>
-                <a href="" className='about__contact-link'>
+                <a href="https://miguelgarcia-portfolio.netlify.app/" target='_blank' className='about__contact-link'>
                     <BsBriefcaseFill className='about__contact-icon' />
                 </a>
-                <a href="" className='about__contact-link'>
+                <a href="https://github.com/fernandog197" target='_blank' className='about__contact-link'>
                     <BsGithub className='about__contact-icon' />
                 </a>
-                <a href="" className='about__contact-link'>
+                <a href="https://www.linkedin.com/in/miguel-fernando-garcia-1b1670186/" target='_blank' className='about__contact-link'>
                     <BsLinkedin className='about__contact-icon' />
                 </a>
-                <a href="" className='about__contact-link'>
+                <a href="https://twitter.com/MiguelF33016837" target='_blank' className='about__contact-link'>
                     <BsTwitter className='about__contact-icon' />
                 </a>
-                <a href="" className='about__contact-link'>
+                <a href="mailto:bluewavesalta@gmail.com" target='_blank' className='about__contact-link'>
                     <MdEmail className='about__contact-icon' />
                 </a>
             </div>
