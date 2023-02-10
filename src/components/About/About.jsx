@@ -16,7 +16,7 @@ const About = ({ language }) => {
 
     return (
         <div className='about__container container'>
-            <p>{language.about.text01}<strong>Miguel Garcia</strong>{language.about.text02}<a href="" target='_blank'>{language.about.here}</a>.</p>
+            <p>{language.about.text01}<strong>Miguel Garcia</strong>{language.about.text02}<a href="https://miguelgarcia-portfolio-miguedev.vercel.app/" target='_blank'>{language.about.here}</a>.</p>
             <br />
             <h2>{language.about.title01}</h2>
             <p>
@@ -76,7 +76,7 @@ const About = ({ language }) => {
             <br />
             <br />
             <div className='about__contact'>
-                <a href="https://miguelgarcia-portfolio.netlify.app/" target='_blank' className='about__contact-link'>
+                <a href="https://miguelgarcia-portfolio-miguedev.vercel.app/" target='_blank' className='about__contact-link'>
                     <BsBriefcaseFill className='about__contact-icon' />
                 </a>
                 <a href="https://github.com/fernandog197" target='_blank' className='about__contact-link'>

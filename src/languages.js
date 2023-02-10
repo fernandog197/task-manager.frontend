@@ -33,7 +33,7 @@ export const español = {
     },
     about: {
         text01: 'Este proyecto fue desarrollado por ',
-        texto02: ' y puede ser visitado haciendo clic ',
+        text02: ' y puede ser visitado haciendo clic ',
         here: ' aquí.',
 
         title01: 'Acerca de este proyecto',
@@ -91,7 +91,7 @@ export const english = {
     },
     about: {
         text01: 'This project was developed by ',
-        texto02: ' and can be visited by clicking on the link ',
+        text02: ' and can be visited by clicking on the link ',
         here: ' here.',
 
         title01: 'About this project',

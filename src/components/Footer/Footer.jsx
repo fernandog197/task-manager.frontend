@@ -22,7 +22,7 @@ const Footer = ({ language }) => {
                     </li>
 
                     <li>
-                        <a href="https://miguelgarcia-portfolio.netlify.app/" target='_blank' className="footer__link">{language.footer.portfolio}</a>
+                        <a href="https://miguelgarcia-portfolio-miguedev.vercel.app/" target='_blank' className="footer__link">{language.footer.portfolio}</a>
                     </li>
                 </ul>
 
